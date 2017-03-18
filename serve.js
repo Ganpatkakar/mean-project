@@ -4,6 +4,7 @@ var path = require('path');
 
 var index = require('./routes/index');
 var tasks = require('./routes/tasks');
+var currency = require('./routes/currency');
 
 var port  = 3001;
 
@@ -23,6 +24,7 @@ app.use(bodyParser.urlencoded({extended : false}));
 
 app.use('/', index);
 app.use('/api',tasks);
+app.use('/currency',currency);
 
 app.listen(port, function () {
     console.log('server started on port', port);
