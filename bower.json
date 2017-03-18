@@ -1,0 +1,18 @@
+{
+  "name": "Single1",
+  "description": "",
+  "main": "serve.js",
+  "authors": [
+    "kakar"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Single"
+  ],
+  "homepage": "",
+  "dependencies": {
+    "angular-material": "^1.1.1",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1"
+  }
+}
