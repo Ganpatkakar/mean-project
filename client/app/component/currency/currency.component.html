@@ -1,0 +1,61 @@
+<div data-page="currency-converter" class="page no-toolbar no-navbar">
+  <div class="page-content blue-bg">
+
+    <div id="pages_maincontent">
+
+      <h3 class="page_subtitle page-heading">Select the currency and enter amount</h3>
+
+      <h2 id="Note"></h2>
+
+      <form>
+        <div class="col-sm-6 form-group">
+          <section class="col-sm-3">
+            <label class="lables">From:</label>
+          </section>
+          <section class="col-sm-9">
+
+            <select class="changefrom form-control" [(ngModel)]="fromCountry" name="fromCountry"
+                    (change)="changeCountryFrom($event.target.value)">
+              <option *ngFor="let curc of currencyc" value="{{curc.cc}}-{{curc.name}}">{{curc.cc}}-{{curc.name}}
+              </option>
+            </select>
+          </section>
+        </div>
+        <div class="col-sm-6 form-group">
+          <section class="col-sm-3 form-group">
+            <label class="lables">To:</label>
+          </section>
+          <section class="col-sm-9">
+            <select class="changeto form-control" [(ngModel)]="targetCountry" name="targetCountry"
+                    (change)="changeCountryTo($event.target.value)"
+                    (keypress)="changeCountryTo($event.target.value)">
+              <option *ngFor="let curc of currencyc" [selected]="curc.cc=='JPY'-curc.name=='Japanese yen'"
+                      value="{{curc.cc}}-{{curc.name}}">
+                {{curc.cc}}-{{curc.name}}
+              </option>
+            </select>
+
+          </section>
+        </div>
+      </form>
+      <div class="col-sm-6 form-group">
+        <section class="col-sm-3 form-group">
+          <label class="lables">Amount:</label>
+        </section>
+        <section class="col-sm-9">
+          <input type="number" name="fromVal" [ngModel]="fromVal" data-ewb-beep="on" id="fromVal"
+                 min="1" max="999999" (change)="fromCurrency($event)" (keyup)="fromCurrency($event)"
+                 class="form_input required form-control"/>
+        </section>
+      </div>
+      <div class="col-sm-6 form-group">
+        <section class="col-sm-3 form-group">
+          <label class="lables">Amount:</label>
+        </section>
+        <section class="col-sm-9">
+          <span>{{targetVal}}</span>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
