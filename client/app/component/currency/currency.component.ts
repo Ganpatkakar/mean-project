@@ -4,8 +4,9 @@ import  {TaskServices} from '../../services/task.services';
 
 @Component({
   selector: 'currency',
+  moduleId : module.id,
   styleUrls: ['currency.component.css'],
-  templateUrl: 'currency.component.html',
+  templateUrl: `currency.component.html`,
   providers: [TaskServices]
 })
 

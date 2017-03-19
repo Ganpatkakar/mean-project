@@ -111,8 +111,9 @@ var CurrencyComponent = (function () {
 CurrencyComponent = __decorate([
     core_1.Component({
         selector: 'currency',
+        moduleId: module.id,
         styleUrls: ['currency.component.css'],
-        templateUrl: 'currency.component.html',
+        templateUrl: "currency.component.html",
         providers: [task_services_1.TaskServices]
     }),
     __metadata("design:paramtypes", [task_services_1.TaskServices])
