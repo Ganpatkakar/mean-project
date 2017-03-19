@@ -12,12 +12,6 @@ var app_component_1 = require("./app.component");
 var home_component_1 = require("./component/home/home.component");
 var http_1 = require("@angular/http");
 var forms_1 = require("@angular/forms");
-var currency_component_1 = require("./component/currency/currency.component");
-var dashboard_component_1 = require("./component/dashboard/dashboard.component");
-var next_month_compnent_1 = require("./component/dashboard/next-month.compnent");
-var next_quarter_component_1 = require("./component/dashboard/next-quarter.component");
-var next_week_component_1 = require("./component/dashboard/next-week.component");
-var next_year_component_1 = require("./component/dashboard/next-year.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,8 +20,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule],
-        declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, currency_component_1.CurrencyComponent, dashboard_component_1.DashboardComponent, next_month_compnent_1.NextMonthComponent,
-            next_quarter_component_1.NextQuarterComponent, next_week_component_1.NextWeekComponent, next_year_component_1.NextYearComponent],
+        declarations: [app_component_1.AppComponent, home_component_1.HomeComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
