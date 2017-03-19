@@ -4,7 +4,7 @@ import  {TaskServices} from './services/task.services';
 @Component({
     moduleId : module.id,
     selector: 'my-app',
-    template: `<home></home>`,
+    templateUrl : './app.component.html',
     providers : [TaskServices]
 })
 export class AppComponent { name = 'Angular'; }

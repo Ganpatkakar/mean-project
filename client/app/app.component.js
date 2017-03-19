@@ -18,7 +18,7 @@ AppComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'my-app',
-        template: "<home></home>",
+        templateUrl: './app.component.html',
         providers: [task_services_1.TaskServices]
     })
 ], AppComponent);
