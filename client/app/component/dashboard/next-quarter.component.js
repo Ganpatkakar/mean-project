@@ -15,7 +15,8 @@ var NextQuarterComponent = (function () {
 NextQuarterComponent = __decorate([
     core_1.Component({
         selector: 'next-quarter',
-        templateUrl: 'next-quarter.component.html'
+        moduleId: module.id,
+        templateUrl: './next-quarter.component.html'
     })
 ], NextQuarterComponent);
 exports.NextQuarterComponent = NextQuarterComponent;

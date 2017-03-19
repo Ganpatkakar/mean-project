@@ -15,7 +15,8 @@ var DashboardComponent = (function () {
 DashboardComponent = __decorate([
     core_1.Component({
         selector: 'dashboard',
-        templateUrl: 'dashboard.component.html'
+        moduleId: module.id,
+        templateUrl: './dashboard.component.html'
     })
 ], DashboardComponent);
 exports.DashboardComponent = DashboardComponent;

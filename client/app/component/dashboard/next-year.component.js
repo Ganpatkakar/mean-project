@@ -15,7 +15,8 @@ var NextYearComponent = (function () {
 NextYearComponent = __decorate([
     core_1.Component({
         selector: 'next-year',
-        templateUrl: 'next-year.component.html'
+        moduleId: module.id,
+        templateUrl: './next-year.component.html'
     })
 ], NextYearComponent);
 exports.NextYearComponent = NextYearComponent;

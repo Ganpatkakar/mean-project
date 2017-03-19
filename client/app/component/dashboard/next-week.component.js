@@ -35,7 +35,8 @@ var NextWeekComponent = (function () {
 NextWeekComponent = __decorate([
     core_1.Component({
         selector: 'next-week',
-        templateUrl: 'next-week.component.html',
+        moduleId: module.id,
+        templateUrl: './next-week.component.html',
         providers: [task_services_1.TaskServices]
     }),
     __metadata("design:paramtypes", [task_services_1.TaskServices])

@@ -3,7 +3,8 @@ import  {TaskServices} from '../../services/task.services';
 
 @Component({
   selector : 'next-week',
-  templateUrl : 'next-week.component.html',
+  moduleId : module.id,
+  templateUrl : './next-week.component.html',
   providers: [TaskServices]
 })
 

@@ -15,7 +15,8 @@ var NextMonthComponent = (function () {
 NextMonthComponent = __decorate([
     core_1.Component({
         selector: 'next-month',
-        templateUrl: 'next-month.component.html'
+        moduleId: module.id,
+        templateUrl: './next-month.component.html'
     })
 ], NextMonthComponent);
 exports.NextMonthComponent = NextMonthComponent;
